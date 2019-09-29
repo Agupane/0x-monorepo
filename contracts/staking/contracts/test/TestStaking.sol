@@ -56,28 +56,6 @@ contract TestStaking is
         return IEtherToken(wethAddress);
     }
 
-    function getWethAssetData()
-        public
-        view
-        returns (bytes memory)
-    {
-        address wethAddress = TestStaking(address(uint160(stakingContract))).testWethAddress();
-        return abi.encodeWithSelector(
-            IAssetData(address(0)).ERC20Token.selector,
-            wethAddress
-        );
-    }
-
-    function getWethAssetProxy()
-        public
-        view
-        returns (IAssetProxy wethAssetProxy)
-    {
-        address wethAssetProxyAddress = TestStaking(address(uint160(stakingContract))).testWethAssetProxyAddress();
-        wethAssetProxy = IAssetProxy(wethAssetProxyAddress);
-        return wethAssetProxy;
-    }
-
     function getZrxVault()
         public
         view
