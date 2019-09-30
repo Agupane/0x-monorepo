@@ -36,6 +36,7 @@ export const artifacts = {
     MultiAssetProxy: MultiAssetProxy as ContractArtifact,
     StaticCallProxy: StaticCallProxy as ContractArtifact,
     ERC20Bridge: ERC20Bridge as ContractArtifact,
+    Eth2DaiBridge: Eth2DaiBridge as ContractArtifact,
     IAssetData: IAssetData as ContractArtifact,
     IAssetProxy: IAssetProxy as ContractArtifact,
     IAssetProxyDispatcher: IAssetProxyDispatcher as ContractArtifact,
